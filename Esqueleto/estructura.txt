@@ -1,0 +1,44 @@
+Estructura basica de la web
+
+- /index.php
+    Si el usuario a iniciado sesion, 
+    redirige a la pagina de /principal/feed.php,
+    si no,
+    Muestra informacion basica, con un boton/enlace a la pagina de /sesiones/inicio.php
+
+- /sesiones/
+
+    - ./inicio.php
+        Permite iniciar sesion al usuario, compara los datos introducidos con los de la bbdd.
+        Si los datos son correctos, se inicia una sesion y redirige a /principal/feed.php
+
+    - ./registro.php
+        Permite registrarse en la bbdd.
+        Pide como minimo usuario y contraseña.
+        Al registrarse, redirige a /sesiones/inicio.php.
+
+- /principal/
+
+    - ./perfil.php
+        Permite al usuario ver sus datos y modificarlos; se recoge de la bbdd
+
+    - ./feed.php
+        Muestra resumen de los posts y/o publicaciones del foro. ; se recoge de la bbdd
+        Para ver un post, este se ve en principal/post.php.
+
+    - ./post.php
+        Muestra un post selecionado desde feed, 
+        la informacion del post se recoge de la bbdd
+        tambien muestra hilos de comentarios de un post y permite crearlos; se recoge de la bbdd
+
+    - ./creapost.php
+        Permite crear un post, 
+        la informacion del post se envia a la bbdd.
+
+- /recursos/
+
+    - ./imagenes/
+        Contiene imagenes.
+
+    - ./funciones.php
+        Contiene funciones comunes en varios ficheros.

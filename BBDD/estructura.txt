@@ -1,0 +1,109 @@
+Estructura basica script de la BBDD
+
+- Bloque de creacion de la base de datos
+
+- Bloque de Creacion de tablas
+
+    - usuarios
+
+        - id
+            Tipo de dato: int
+            PK de tabla
+            unico
+            requerido
+            autoincremental
+            id unico autoincremental para cada usuario.
+
+        - password
+            Tipo de dato: varchar(100)
+            unico
+            requerido
+            Contiene hash de contraseña de un usuario.
+
+        - nombre
+            Tipo de dato: varchar(100)
+            unico
+            requerido
+            Contiene nombre de un usuario.
+
+        - foto
+            Tipo de dato: tinytext
+            Contiene direccion de foto de perfil de un usuario.
+
+        - descripcion
+            Tipo de dato: text
+            Contiene breve descripcion de un usuario.
+
+    - posts
+
+        - id
+            Tipo de dato: int
+            PK de tabla
+            unico
+            requerido
+            autoincremental
+            id unico autoincremental para cada post.
+
+        - usuario
+            Tipo de dato: varchar(100)
+            unico
+            requerido
+            Relacionado con tabla usuarios, columna nombre
+            Contiene nombre de un usuario.
+
+        - fecha
+            Tipo de dato: date
+            requerido
+            Fecha de publicacion.
+            
+        - texto
+            Tipo de dato: text
+            requerido
+            Contiene el texto del post.
+        
+        - imagenes
+            Tipo de dato: SET
+            Contiene direcciones de imagenes.
+
+        
+    - threads
+
+        - id
+            Tipo de dato: int
+            PK de tabla
+            unico
+            autoincremental
+            requerido
+            id unico autoincremental para cada comentario.
+
+        - post
+            Tipo de dato: int
+            requerido
+            Relacionado con tabla posts, columna id
+            id unico para cada post.
+
+        - usuario
+            Tipo de dato: varchar(100)
+            requerido
+            Relacionado con tabla usuarios, columna nombre
+            Contiene nombre de un usuario.
+
+        - anterior
+            Tipo de dato: int
+            id del comentario anterior si es una respuesta.
+
+        - fecha
+            Tipo de dato: date
+            requerido
+            Fecha de publicacion.
+            
+        - texto
+            Tipo de dato: text
+            requerido
+            Contiene breve descripcion de un usuario.
+
+        
+
+
+
+
