@@ -111,8 +111,10 @@ ALTER TABLE posts
 -----------------------------------------------------------------
 
 /* 
-Relaciona la columna usuario de la tabla posts
+Relaciona la columna usuario de la tabla hilos
 con la columna nombre de la tabla usuarios
+y la columna post de la tabla hilos
+con la columna id de la tabla posts
 */
 
 ALTER TABLE hilos
