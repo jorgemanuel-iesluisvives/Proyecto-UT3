@@ -34,6 +34,18 @@ Estructura basica script de la BBDD
             Tipo de dato: text
             Contiene breve descripcion de un usuario.
 
+        - fecha_creacion
+            Tipo de dato: DATE
+            fecha de creacion del usuario.
+
+        - rango
+            Tipo de dato: ENUM
+            Rango de la cuenta, puede ser "Administrador", "Moderador", "Usuario".
+
+        - estado
+            Tipo de dato: ENUM
+            Estado de la cuenta, puede ser "Activada", "Desactivada", "Baneada".
+
     - posts
 
         - id
@@ -43,13 +55,17 @@ Estructura basica script de la BBDD
             requerido
             autoincremental
             id unico autoincremental para cada post.
-
-        - usuario
+       
+        - titulo
             Tipo de dato: varchar(100)
-            unico
             requerido
             Relacionado con tabla usuarios, columna nombre
             Contiene nombre de un usuario.
+
+        - usuario
+            Tipo de dato: varchar(100)
+            requerido
+            Contiene titulo del post.
 
         - fecha
             Tipo de dato: date
@@ -62,11 +78,11 @@ Estructura basica script de la BBDD
             Contiene el texto del post.
         
         - imagenes
-            Tipo de dato: SET
-            Contiene direcciones de imagenes.
+            Tipo de dato: TEXT
+            Contiene lista de direcciones de imagenes serializadas.
 
         
-    - threads
+    - hilos
 
         - id
             Tipo de dato: int
