@@ -1,0 +1,15 @@
+PROYECTO_3_RETRO_VICTOR
+
+Se añade la estructura inicial del proyecto RetroGames.
+
+Incluye:
+- Sistema básico de login mediante sesiones PHP
+- Feed principal con publicaciones tipo foro
+- Formulario para añadir nuevos juegos retro con subida de imágenes
+- Almacenamiento temporal de posts mediante sesiones
+- Visualización de publicaciones con imagen, descripción y likes
+- Opción para borrar publicaciones
+- Barra superior con nombre de la aplicación y usuario autenticado
+- Estilos CSS básicos unificados
+
+Este commit representa un estado funcional inicial del proyecto, previo a la integración de la base de datos.
