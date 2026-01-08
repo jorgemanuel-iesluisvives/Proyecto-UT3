@@ -11,5 +11,6 @@ Incluye:
 - Opción para borrar publicaciones
 - Barra superior con nombre de la aplicación y usuario autenticado
 - Estilos CSS básicos unificados
+- Tambien se incluye documento word con la memoria del proyecto (falta incluir integracion don bbdd)
 
-Este commit representa un estado funcional inicial del proyecto, previo a la integración de la base de datos.
+Este commit representa un estado funcional inicial y visual del proyecto, previo a la integración con la base de datos.
