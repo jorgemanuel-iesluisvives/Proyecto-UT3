@@ -81,7 +81,7 @@ Tabla threads
 CREATE TABLE hilos(
     id INT AUTO_INCREMENT PRIMARY KEY,
     post INT NOT NULL, 
-    usuario VARCHAR(100) NOT NULL UNIQUE, 
+    usuario VARCHAR(100) NOT NULL, 
     anterior INT,
     fecha DATE NOT NULL,
     texto text NOT NULL
