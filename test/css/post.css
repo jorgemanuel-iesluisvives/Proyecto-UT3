@@ -1,0 +1,17 @@
+@import url("base.css");
+
+.post-detalle {
+    width: 500px;
+    margin: 30px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.comentario {
+    background-color: #2a2a2a;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
