@@ -7,6 +7,12 @@ Contiene 2 ficheros Containerfile:
  - En la raiz se encuentra el Containerfile de la imagen de la web.
  - En bbdd se encuentra el Containerfile de la imagen de la bbdd.
 
+Hacer git clone https://github.com/jorgemanuel-iesluisvives/Proyecto-UT3/edit/Contenedores/
+
+Hacer cd al directorio del proyecto
+
+ejecutar podman-compose up -d
+
 Instrucciones de la version de release:
 
 1- Llevar el fichero IAW.zip a una maquina con Ubuntu/Linux y descomprimirlo con unzip.
