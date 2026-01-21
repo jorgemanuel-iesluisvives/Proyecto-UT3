@@ -8,6 +8,7 @@ Contiene 2 ficheros Containerfile:
  - En bbdd se encuentra el Containerfile de la imagen de la bbdd.
 
 Instrucciones de la version de release:
+
 1- Llevar el fichero IAW.zip a una maquina con Ubuntu/Linux y descomprimirlo con unzip.
 
 2- Moverse hasta IAW/
