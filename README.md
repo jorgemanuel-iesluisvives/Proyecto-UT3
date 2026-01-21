@@ -9,8 +9,13 @@ Contiene 2 ficheros Containerfile:
 
 Instrucciones de la version de release:
 1- Llevar el fichero IAW.zip a una maquina con Ubuntu/Linux y descomprimirlo con unzip.
+
 2- Moverse hasta IAW/
+
 3- Ejecutar el comando "bash script.sh"
+
 4- En un navegador escribir en la barra de direcciones "http://IPDESERVIDOR:8080/test/"
+
 Nota: Se debe sustituir "IPDESERVIDOR" con la ip de tu servidor
+
 Nota2: Se recomienda usar antes el comando "podman system prune --all --force && podman rmi --all" para limpiar el servidor de imagenes y contenedores
