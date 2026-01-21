@@ -13,6 +13,12 @@ Esta versión esta diseñada para desplegarse en contenedores de podman. Contien
 
 3- ejecutar podman-compose up -d
 
+4- http://IPDESERVIDOR:8080/test/principal/feed.php
+
+Nota: Se debe sustituir "IPDESERVIDOR" con la ip de tu servidor
+
+Nota2: Se recomienda usar antes el comando "podman system prune --all --force && podman rmi --all" para limpiar el servidor de imagenes y contenedores
+
 Instrucciones de la version de release:
 
 1- Llevar el fichero IAW.zip a una maquina con Ubuntu/Linux y descomprimirlo con unzip.
