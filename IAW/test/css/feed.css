@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    background: #0b0b0b;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= TOP BAR ================= */
+
+.top-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.top-left {
+    text-align: left;
+}
+
+.top-center {
+    text-align: center;
+}
+
+.top-right {
+    text-align: right;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00ffd5;
+    margin-bottom: 8px;
+}
+
+.btn-add {
+    display: inline-block;
+    background: #00ffd5;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-profile,
+.btn-logout {
+    background: #ff0066;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn-profile:hover,
+.btn-logout:hover {
+    background: #ff3385;
+}
+
+/* ================= FEED ================= */
+
+.feed-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.post {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0,255,213,0.15);
+}
+
+.post h2 {
+    color: #00ffd5;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.post h4 {
+    margin-top: 25px;
+    color: #ff0066;
+}
