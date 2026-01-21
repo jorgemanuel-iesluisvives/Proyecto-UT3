@@ -1,0 +1,37 @@
+name: 'escenario_web_IAW'
+
+volumes:
+ volumen_bbdd:
+
+services:
+  mariadb:
+    container_name: mariadb
+    image: docker.io/mariadb:12.1.2-noble
+    networks: redbridge
+    ports:
+      - 3306:3306
+    environment:
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
+    restart: always
+
+  webserver:
+    container_name: webserver
+    image: localhost/webserver:v1
+    networks: redbridge
+    ports:
+      - 8080:80
+    restart: always
+    depends_on:
+      - mariadb
+
+networks:
+ redbridge:
+
+#SECRETO CON COMANDO: printf contradepost1234 | podman secret create contrapostgres1234 -
+
+#podman run -d -p 3306:3306 --name bbdd --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1 localhost/bbdd:v1
+#podman run -d -p 8080:80 --name webserver localhost/webserver:v1
+
+#bash contenedor
+#podman exec -it CONTENEDOR bash
+

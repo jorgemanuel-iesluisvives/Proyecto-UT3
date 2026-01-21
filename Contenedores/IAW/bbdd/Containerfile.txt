@@ -1,0 +1,6 @@
+FROM docker.io/mariadb:12.1.2-noble
+WORKDIR /docker-entrypoint-initdb.d/
+COPY ./foro.sql .
+EXPOSE 3306
+#podman build -t localhost/bbdd:v1 .
+#podman run -d -p 3306:3306 --network=podman --name bbdd --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1 localhost/bbdd:v1

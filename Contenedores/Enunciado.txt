@@ -1,0 +1,8 @@
+Crear una imagen de contenedor del proyecto de IAW
+
+Apertura: miércoles, 14 de enero de 2026, 00:00
+Cierre: miércoles, 21 de enero de 2026, 17:05
+
+Para esta actividad, deberéis crear un fichero Containerfile/Dockerfile en el directorio raíz de vuestro proyecto de PHP para crear una imagen que lo exponga en el puerto 80 y se conecte a una base de datos MySQL/MariaDB externa con parámetros obtenidos mediante variables de entorno (dirección del servidor de BBDD, puerto BBDD, nombre de la base de datos, usuario con privilegios para manipularla y su contraseña) y un compose.yaml para unir un contenedor de esta imagen con otro de BBDD.
+
+Entregad solamente la URL de vuestro repositorio.
