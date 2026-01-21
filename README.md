@@ -7,7 +7,7 @@ Contiene 2 ficheros Containerfile:
  - En la raiz se encuentra el Containerfile de la imagen de la web.
  - En bbdd se encuentra el Containerfile de la imagen de la bbdd.
 
-Hacer git clone https://github.com/jorgemanuel-iesluisvives/Proyecto-UT3/edit/Contenedores/
+Hacer git clone https://github.com/jorgemanuel-iesluisvives/Proyecto-UT3/tree/Contenedores
 
 Hacer cd al directorio del proyecto
 
