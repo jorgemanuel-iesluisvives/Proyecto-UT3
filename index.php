@@ -1,2 +1,2 @@
 <?php
-header('Location: http://localhost/test/principal/feed.php');
+header('Location: ./test/principal/feed.php');
