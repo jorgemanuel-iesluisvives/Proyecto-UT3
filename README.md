@@ -7,7 +7,7 @@ Esta versión esta diseñada para desplegarse en contenedores de podman. Contien
 - En la raiz se encuentra el Containerfile de la imagen de la web.
 - En bbdd se encuentra el Containerfile de la imagen de la bbdd.
 
-1 - Hacer git clone https://github.com/jorgemanuel-iesluisvives/Proyecto-UT3/tree/Contenedores
+1 - Hacer git clone https://github.com/jorgemanuel-iesluisvives/Proyecto-UT3
 
 2- Hacer cd al directorio del proyecto
 
