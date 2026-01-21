@@ -1,12 +1,13 @@
 name: 'escenario_web_IAW'
 
+volumes:
+ volumen_bbdd:
+
 services:
   bbdd:
     container_name: bbdd
     image: localhost/bbdd:v1
-    networks:
-      redbridgeIAW:
-        ipv4_address: 10.5.0.5  
+    networks: redbridge
     ports:
       - 3306:3306
     environment:
@@ -18,7 +19,7 @@ services:
     image: localhost/webserver:v1
     networks: redbridge
     networks:
-      redbridgeIAW:
+      vpcbr:
         ipv4_address: 10.5.0.6    
     ports:
       - 8080:80
@@ -27,20 +28,12 @@ services:
       - bbdd
 
 networks:
-  redbridgeIAW:
+ redbridge:
+
+networks:
+  vpcbr:
     driver: bridge
     ipam:
      config:
        - subnet: 10.5.0.0/16
          gateway: 10.5.0.1
-
-#podman network create --subnet 192.168.33.0/24 --gateway 192.168.33.3 redbridge
-
-#podman-compose up -d
-#podman-compose down
-#podman run -d -p 3306:3306 --name bbdd --env MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=1 localhost/bbdd:v1
-#podman run -d -p 8080:80 --name webserver localhost/webserver:v1
-
-#bash contenedor
-#podman exec -it CONTENEDOR bash
-
