@@ -1,9 +1,11 @@
-name: 'escenario_web_IAW'
+name: 'escenario_web_iaw'
 
 services:
   bbdd:
+    build:
+      context: ./bbdd
+      containerfile: Containerfile
     container_name: bbdd
-    image: localhost/bbdd:v1
     networks:
       redbridgeIAW:
         ipv4_address: 10.5.0.5
@@ -14,9 +16,11 @@ services:
     restart: always
 
   webserver:
+    build:
+      context: .
+      containerfile: Containerfile
     container_name: webserver
     image: localhost/webserver:v1
-    networks: redbridge
     networks:
       redbridgeIAW:
         ipv4_address: 10.5.0.6
@@ -33,3 +37,4 @@ networks:
      config:
        - subnet: 10.5.0.0/16
          gateway: 10.5.0.1
+
