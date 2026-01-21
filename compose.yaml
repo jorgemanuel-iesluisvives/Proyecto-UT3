@@ -1,0 +1,35 @@
+name: 'escenario_web_IAW'
+
+services:
+  bbdd:
+    container_name: bbdd
+    image: localhost/bbdd:v1
+    networks:
+      redbridgeIAW:
+        ipv4_address: 10.5.0.5
+    ports:
+      - 3306:3306
+    environment:
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
+    restart: always
+
+  webserver:
+    container_name: webserver
+    image: localhost/webserver:v1
+    networks: redbridge
+    networks:
+      redbridgeIAW:
+        ipv4_address: 10.5.0.6
+    ports:
+      - 8080:80
+    restart: always
+    depends_on:
+      - bbdd
+
+networks:
+  redbridgeIAW:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.5.0.0/16
+         gateway: 10.5.0.1

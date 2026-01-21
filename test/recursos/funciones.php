@@ -49,7 +49,7 @@ function formulario_btn_ir_a_crear_post(){
 #Tabla usuarios
 #------------------------------------------
 function inserta_usuario_BBDD($password,$nombre,$foto,$descripcion,$rango,$estado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "INSERT INTO usuarios (password, nombre, foto, descripcion, fecha_creacion, rango, estado) VALUES (?, ?, ?, ?, ?, ?, ?)";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="sssssss";
@@ -63,7 +63,7 @@ function inserta_usuario_BBDD($password,$nombre,$foto,$descripcion,$rango,$estad
 #Cambios de datos de la BBDD, el nombre de la funcion indica, por orden, que se cambia y en que tabla.
 #------------
 function cambia_contra_usuario_BBDD($passwordnueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE usuarios SET password = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -72,7 +72,7 @@ function cambia_contra_usuario_BBDD($passwordnueva,$idbuscado){
 }
 
 function cambia_nombre_usuario_BBDD($nombrenueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE usuarios SET nombre = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -81,7 +81,7 @@ function cambia_nombre_usuario_BBDD($nombrenueva,$idbuscado){
 }
 
 function cambia_foto_usuario_BBDD($fotonueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE usuarios SET foto = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -90,7 +90,7 @@ function cambia_foto_usuario_BBDD($fotonueva,$idbuscado){
 }
 
 function cambia_descripcion_usuario_BBDD($descripcionnueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE usuarios SET descripcion = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -99,7 +99,7 @@ function cambia_descripcion_usuario_BBDD($descripcionnueva,$idbuscado){
 }
 
 function cambia_rango_usuario_BBDD($rangonueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE usuarios SET rango = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -108,7 +108,7 @@ function cambia_rango_usuario_BBDD($rangonueva,$idbuscado){
 }
 
 function cambia_estado_usuario_BBDD($estadonueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE usuarios SET estado = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -165,7 +165,7 @@ function comprueba_nombre_contrasena($inicionombre,$iniciocontrasena){
 #------------
 
 function busca_por_nombre_id_usuario_BBDD($nombre){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT id FROM usuarios WHERE nombre='$nombre'" ;
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -177,7 +177,7 @@ function busca_por_nombre_id_usuario_BBDD($nombre){
 }
 
 function busca_por_id_nombre_usuario_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT nombre FROM usuarios WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -189,7 +189,7 @@ function busca_por_id_nombre_usuario_BBDD($idbuscado){
 }
 
 function busca_por_id_contrasena_usuario_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT password FROM usuarios WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -201,7 +201,7 @@ function busca_por_id_contrasena_usuario_BBDD($idbuscado){
 }
 
 function busca_por_id_foto_usuario_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT foto FROM usuarios WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -213,7 +213,7 @@ function busca_por_id_foto_usuario_BBDD($idbuscado){
 }
 
 function busca_por_id_descripcion_usuario_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT descripcion FROM usuarios WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -224,7 +224,7 @@ function busca_por_id_descripcion_usuario_BBDD($idbuscado){
     return $vuelve;
 }
 function busca_por_id_fecha_creacion_usuario_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT fecha_creacion FROM usuarios WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -235,7 +235,7 @@ function busca_por_id_fecha_creacion_usuario_BBDD($idbuscado){
     return $vuelve;
 }
 function busca_por_id_rango_usuario_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT rango FROM usuarios WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -246,7 +246,7 @@ function busca_por_id_rango_usuario_BBDD($idbuscado){
     return $vuelve;
 }
 function busca_por_id_estado_usuario_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT estado FROM usuarios WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -263,7 +263,7 @@ function busca_por_id_estado_usuario_BBDD($idbuscado){
 #Tabla posts
 #------------------------------------------
 function inserta_post_BBDD($titulo,$usuario,$texto,$imagenes){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "INSERT INTO posts (titulo, usuario, fecha, texto, imagenes) VALUES (?, ?, ?, ?, ?)";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="sssss";
@@ -275,7 +275,7 @@ function inserta_post_BBDD($titulo,$usuario,$texto,$imagenes){
 #Cambios de datos de la BBDD, el nombre de la funcion indica, por orden, que se cambia y en que tabla.
 #------------
 function cambia_titulo_post_BBDD($titulonueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE posts SET titulo = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -286,7 +286,7 @@ function cambia_titulo_post_BBDD($titulonueva,$idbuscado){
 #NO SE CAMBIA USUARIO DE UN POST
 
 function cambia_fecha_post_BBDD($fechanueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE posts SET fecha = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -295,7 +295,7 @@ function cambia_fecha_post_BBDD($fechanueva,$idbuscado){
 }
 
 function cambia_texto_post_BBDD($textonueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE posts SET texto = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -304,7 +304,7 @@ function cambia_texto_post_BBDD($textonueva,$idbuscado){
 }
 
 function cambia_imagenes_post_BBDD($imagenesnueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE posts SET imagenes = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -316,7 +316,7 @@ function cambia_imagenes_post_BBDD($imagenesnueva,$idbuscado){
 #busquedas de datos de la BBDD, el nombre de la funcion indica, por orden, que se usa para buscar, que se busca, y en que tabla.
 #------------
 function busca_por_id_titulo_post_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT titulo FROM posts WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -328,7 +328,7 @@ function busca_por_id_titulo_post_BBDD($idbuscado){
 }
 
 function busca_por_id_usuario_post_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT usuario FROM posts WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -340,7 +340,7 @@ function busca_por_id_usuario_post_BBDD($idbuscado){
 }
 
 function busca_por_id_fecha_post_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT fecha FROM posts WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -352,7 +352,7 @@ function busca_por_id_fecha_post_BBDD($idbuscado){
 }
 
 function busca_por_id_texto_post_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT texto FROM posts WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -364,7 +364,7 @@ function busca_por_id_texto_post_BBDD($idbuscado){
 }
 
 function busca_por_id_imagenes_post_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT imagenes FROM posts WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -380,7 +380,7 @@ function busca_por_id_imagenes_post_BBDD($idbuscado){
 #Tabla hilos
 #------------------------------------------
 function inserta_hilo_BBDD($post,$usuario,$anterior,$texto){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "INSERT INTO hilos (post, usuario, anterior, fecha, texto) VALUES (?, ?, ?, ?, ?)";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="isiss";
@@ -394,7 +394,7 @@ function inserta_hilo_BBDD($post,$usuario,$anterior,$texto){
     #NO SE CAMBIAN post, usuario, anterior
 
 function cambia_fecha_hilo_BBDD($fechanueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE hilos SET fecha = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -403,7 +403,7 @@ function cambia_fecha_hilo_BBDD($fechanueva,$idbuscado){
 }
 
 function cambia_texto_hilo_BBDD($textonueva,$idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "UPDATE hilos SET texto = ? where id = ? ";
     $stmt= mysqli_prepare(mysql: $conexion,query: $sql);
     $tipos="si";
@@ -415,7 +415,7 @@ function cambia_texto_hilo_BBDD($textonueva,$idbuscado){
 #busquedas de datos de la BBDD, el nombre de la funcion indica, por orden, que se usa para buscar, que se busca, y en que tabla.
 #------------
 function busca_por_id_usuario_hilo_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT usuario FROM hilos WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -427,7 +427,7 @@ function busca_por_id_usuario_hilo_BBDD($idbuscado){
 }
 
 function busca_por_id_fecha_hilo_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT fecha FROM hilos WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -439,7 +439,7 @@ function busca_por_id_fecha_hilo_BBDD($idbuscado){
 }
 
 function busca_por_id_texto_hilo_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT texto FROM hilo WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;
@@ -451,7 +451,7 @@ function busca_por_id_texto_hilo_BBDD($idbuscado){
 }
 
 function busca_por_id_anterior_hilo_BBDD($idbuscado){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT anterior FROM hilos WHERE id = $idbuscado ";
     $resultado= mysqli_query($conexion, $sql);
     $modo=MYSQLI_ASSOC;

@@ -36,7 +36,7 @@ function iniciar(){
 
 
 function muestra_posts(){
-    $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT * FROM posts;";
     
     $resultado = mysqli_query($conexion, $sql);

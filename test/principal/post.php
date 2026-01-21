@@ -112,7 +112,7 @@ function formulario_crear_comentario(){
 
     function muestra_comentarios(){
         global $idpost;
-        $conexion = mysqli_connect('localhost','root','','foro',3306,'');
+        $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
         $sql = "SELECT * FROM hilos where post="."$idpost"." ;";
         
         $resultado = mysqli_query($conexion, $sql);
