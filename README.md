@@ -13,7 +13,7 @@ Esta versión esta diseñada para desplegarse en contenedores de podman. Contien
 
 3- ejecutar podman-compose up -d
 
-4- http://IPDESERVIDOR:8080/test/principal/feed.php
+4- En un navegador escribir en la barra de direcciones "http://IPDESERVIDOR:8080/test/principal/feed.php"
 
 Nota: Se debe sustituir "IPDESERVIDOR" con la ip de tu servidor
 
