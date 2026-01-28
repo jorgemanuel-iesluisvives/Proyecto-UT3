@@ -1294,7 +1294,7 @@ CLANG_OPTIONS          =
 # generated with the -Duse_libclang=ON option for CMake.
 
 CLANG_DATABASE_PATH    =
-
+ 
 #---------------------------------------------------------------------------
 # Configuration options related to the alphabetical class index
 #---------------------------------------------------------------------------
