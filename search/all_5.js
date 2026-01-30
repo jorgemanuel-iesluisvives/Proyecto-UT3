@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['feed_2ephp_0',['feed.php',['../feed_8php.html',1,'']]],
+  ['formulario_5fbtn_5fcierra_5fsesion_1',['formulario_btn_cierra_sesion',['../funciones_8php.html#a88f5df143cc0cb358ab92c9b4186949a',1,'funciones.php']]],
+  ['formulario_5fbtn_5fir_5fa_5fcrear_5fpost_2',['formulario_btn_ir_a_crear_post',['../funciones_8php.html#aa07cbfb6a15d29f6689117027797308d',1,'funciones.php']]],
+  ['formulario_5fbtn_5fmoddatos_3',['formulario_btn_moddatos',['../perfil_8php.html#a56a3be863b29d36dbbfd87c38400865b',1,'perfil.php']]],
+  ['formulario_5fbtn_5fvuelve_5ffeed_4',['formulario_btn_vuelve_feed',['../funciones_8php.html#a0a04d5f609fe9ef2dc3f55ae1185a228',1,'funciones.php']]],
+  ['formulario_5fbtn_5fvuelve_5fperfil_5',['formulario_btn_vuelve_perfil',['../funciones_8php.html#ae6e733d725768e727a747125b3abb0a3',1,'funciones.php']]],
+  ['formulario_5fcrea_5fdatos_5fpost_6',['formulario_crea_datos_post',['../creapost_8php.html#a6780e655add6fe359164676e24117f85',1,'creapost.php']]],
+  ['formulario_5fcrear_5fcomentario_7',['formulario_crear_comentario',['../post_8php.html#aa1507134d4cfd7f801e6c2fdefdba8de',1,'post.php']]],
+  ['formulario_5fdesactivar_5fusuario_8',['formulario_desactivar_usuario',['../perfil_8php.html#ac8d0e682596632c77139cebf86c8b548',1,'perfil.php']]],
+  ['formulario_5fgenerico_9',['formulario_generico',['../index_8php.html#ae42287540d992cb41f70c4984f99dbfe',1,'formulario_generico():&#160;index.php'],['../funciones__temp_8php.html#ae42287540d992cb41f70c4984f99dbfe',1,'formulario_generico():&#160;funciones_temp.php']]],
+  ['formulario_5finicio_5fsesion_10',['formulario_inicio_sesion',['../inicio_8php.html#ac0e19c4fb1c8044500d6fd1ffef4abd4',1,'formulario_inicio_sesion():&#160;inicio.php'],['../test_8php.html#ac0e19c4fb1c8044500d6fd1ffef4abd4',1,'formulario_inicio_sesion():&#160;test.php']]],
+  ['formulario_5fir_5fa_5fver_5fpost_11',['formulario_ir_a_ver_post',['../feed_8php.html#a12ae9d58f79895b9da5e21c77dba565d',1,'feed.php']]],
+  ['formulario_5fmodificar_5fusuario_5fcontrasena_12',['formulario_modificar_usuario_contrasena',['../perfil_8php.html#aed5a53fb081522b3524ca169e2e223c0',1,'perfil.php']]],
+  ['formulario_5fmodificar_5fusuario_5fdescripcion_13',['formulario_modificar_usuario_descripcion',['../perfil_8php.html#a28c0c8d0e1e1ee8368e47b9cc0934eda',1,'perfil.php']]],
+  ['formulario_5fmodificar_5fusuario_5ffoto_14',['formulario_modificar_usuario_foto',['../perfil_8php.html#ae74436ebbc202094d5d1677d88c86fdb',1,'perfil.php']]],
+  ['formulario_5fmodificar_5fusuario_5fnombre_15',['formulario_modificar_usuario_nombre',['../perfil_8php.html#a14a47b48393ca5fd49a3421984afe068',1,'perfil.php']]],
+  ['formulario_5fregistro_16',['formulario_registro',['../registro_8php.html#ac82a49edea5b074ebe4f754b8af3c957',1,'registro.php']]],
+  ['funciones_2ephp_17',['funciones.php',['../funciones_8php.html',1,'']]],
+  ['funciones_5fphp_18',['funciones_php',['../funciones__temp_8php.html#a56c8dc2b4da2f4743cf63180a49fdbea',1,'funciones_php():&#160;funciones_temp.php'],['../inicio_8php.html#a56c8dc2b4da2f4743cf63180a49fdbea',1,'funciones_php():&#160;inicio.php'],['../registro_8php.html#a56c8dc2b4da2f4743cf63180a49fdbea',1,'funciones_php():&#160;registro.php'],['../test_8php.html#a56c8dc2b4da2f4743cf63180a49fdbea',1,'funciones_php():&#160;test.php']]],
+  ['funciones_5fphp_5fpre_5fhtml_19',['funciones_php_pre_html',['../inicio_8php.html#a29b68c60edca1eb2cf7d10e86be82457',1,'funciones_php_pre_html():&#160;inicio.php'],['../registro_8php.html#a29b68c60edca1eb2cf7d10e86be82457',1,'funciones_php_pre_html():&#160;registro.php'],['../test_8php.html#a447d4603ad387d18332e9d573316c91d',1,'funciones_php_pre_html():&#160;test.php']]],
+  ['funciones_5ftemp_2ephp_20',['funciones_temp.php',['../funciones__temp_8php.html',1,'']]]
+];

@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['sesion_5finiciada_0',['sesion_iniciada',['../funciones__temp_8php.html#a187756aa9ebc59e1992c49ca5f555bb3',1,'sesion_iniciada():&#160;funciones_temp.php'],['../registro_8php.html#a187756aa9ebc59e1992c49ca5f555bb3',1,'sesion_iniciada():&#160;registro.php'],['../test_8php.html#a187756aa9ebc59e1992c49ca5f555bb3',1,'sesion_iniciada():&#160;test.php']]],
+  ['sesion_5fno_5finiciada_1',['sesion_no_iniciada',['../funciones__temp_8php.html#ac5e0a9844377a30ada95ffd90833d2bb',1,'sesion_no_iniciada():&#160;funciones_temp.php'],['../registro_8php.html#ac5e0a9844377a30ada95ffd90833d2bb',1,'sesion_no_iniciada():&#160;registro.php'],['../test_8php.html#ac5e0a9844377a30ada95ffd90833d2bb',1,'sesion_no_iniciada():&#160;test.php']]],
+  ['sesiones_2',['sesiones',['../funciones__temp_8php.html#a8f25fa1a99987d7826ef863c45b0b5e1',1,'sesiones():&#160;funciones_temp.php'],['../registro_8php.html#a8f25fa1a99987d7826ef863c45b0b5e1',1,'sesiones():&#160;registro.php'],['../test_8php.html#a8f25fa1a99987d7826ef863c45b0b5e1',1,'sesiones():&#160;test.php']]],
+  ['sets_5fde_5fcookies_3',['sets_de_cookies',['../funciones__temp_8php.html#a4286ba5aae6450a2b0655faf167995e2',1,'sets_de_cookies():&#160;funciones_temp.php'],['../registro_8php.html#a4286ba5aae6450a2b0655faf167995e2',1,'sets_de_cookies():&#160;registro.php'],['../test_8php.html#a4286ba5aae6450a2b0655faf167995e2',1,'sets_de_cookies():&#160;test.php']]]
+];
