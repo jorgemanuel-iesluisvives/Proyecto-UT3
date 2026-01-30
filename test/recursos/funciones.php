@@ -12,6 +12,11 @@ if($control_errores==1){
 /*
 Funciones comunes
 */
+
+/**
+ * Devuelve la fecha y la hora.
+ * @return string
+ */
 function devuelve_hora(){
         $fecha_creacion=date('Y/m/d h:i:s a', time());
     return $fecha_creacion;
