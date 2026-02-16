@@ -169,6 +169,18 @@ function comprueba_nombre_contrasena($inicionombre,$iniciocontrasena){
 #busquedas de datos de la BBDD, el nombre de la funcion indica, por orden, que se usa para buscar, que se busca, y en que tabla.
 #------------
 
+function busca_id_usuario_BBDD(){
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
+    $sql = "SELECT id FROM usuarios" ;
+    $resultado= mysqli_query($conexion, $sql);
+    $modo=MYSQLI_ASSOC;
+    $vuelve=0;
+    while ($fila = mysqli_fetch_array($resultado,$modo)) {
+        $vuelve=$fila['id'];
+    }
+    return $vuelve;
+}
+
 function busca_por_nombre_id_usuario_BBDD($nombre){
     $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
     $sql = "SELECT id FROM usuarios WHERE nombre='$nombre'" ;
