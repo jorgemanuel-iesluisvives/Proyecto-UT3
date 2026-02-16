@@ -40,9 +40,23 @@ function cuerpo_html(){
     <?php
     
    # funciones_php()
+    function busca_id_usuario_BBDD(){
+    $conexion = mysqli_connect('10.5.0.5','root','','foro',3306,'');
+    $sql = "SELECT id FROM usuarios" ;
+    $resultado= mysqli_query($conexion, $sql);
+    $modo=MYSQLI_ASSOC;
+    $vuelve=0;
+    while ($fila = mysqli_fetch_array($resultado,$modo)) {
+        $vuelve=$fila['id'];
+    }
+    return $vuelve;
+}
+    
+    
     ?>
     <div>¡Hola! Inicia sesion para entrar en el foro: <div>
     <br><br>
+
     </body>
     </html>
     <?php
