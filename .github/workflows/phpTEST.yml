@@ -47,9 +47,12 @@ jobs:
             sleep 2
           done
           echo "MariaDB lista"
-          
+          echo "RESULTADO= $?"
+
     - name: Base de Datos
-      run: mysql -h 127.0.0.1 -uroot foro < bbdd/foro.sql
+      run: 
+           mysql -h 127.0.0.1 -uroot foro < bbdd/foro.sql
+           echo "RESULTADO= $?"
 
 
 
