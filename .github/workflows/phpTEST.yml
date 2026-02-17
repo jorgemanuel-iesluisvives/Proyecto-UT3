@@ -49,11 +49,15 @@ jobs:
           echo "MariaDB lista"
           echo "RESULTADO= $?"
 
-    - name: Base de Datos
+    - name: Inicializacion de Base de Datos
       run: |
            mysql -h 127.0.0.1 -uroot foro < bbdd/foro.sql
            echo "RESULTADO= $?"
 
+    - name: TEST DE Base de Datos
+      run: |
+           mysql -h 127.0.0.1 -uroot foro -e "select * from usuarios ; "
+           echo "RESULTADO= $?"
 
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
