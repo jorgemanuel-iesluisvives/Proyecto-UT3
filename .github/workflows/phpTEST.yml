@@ -50,7 +50,7 @@ jobs:
           echo "RESULTADO= $?"
 
     - name: Base de Datos
-      run: 
+      run: |
            mysql -h 127.0.0.1 -uroot foro < bbdd/foro.sql
            echo "RESULTADO= $?"
 
