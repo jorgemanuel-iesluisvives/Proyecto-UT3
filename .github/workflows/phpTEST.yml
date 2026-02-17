@@ -18,6 +18,7 @@ jobs:
           image: mariadb:12.1.2-noble
           env:
               MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
+              MYSQL_DATABASE: foro
           ports:
               - 3306:3306
  
