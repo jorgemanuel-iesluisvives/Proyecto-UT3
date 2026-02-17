@@ -39,6 +39,11 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
+    - name: Base de Datos
+      run: mysql -h 127.0.0.1 -uroot foro < bbdd/foro.sql
+
+
+
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
