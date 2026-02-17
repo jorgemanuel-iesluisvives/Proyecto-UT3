@@ -1,17 +1,8 @@
 
---Script de creacion de BBDD del proyecto
-
--- Creacion de la base de datos
-------------------------------------------------------------------------
 DROP DATABASE IF EXISTS foro;
 CREATE DATABASE foro;
 USE foro;
-------------------------------------------------------------------------
 
--- Creacion de tablas
-------------------------------------------------------------------------
-
------------------------------------------------------------------
 
 /*
 Tabla usuarios
@@ -37,9 +28,6 @@ CREATE TABLE usuarios(
     estado ENUM ("Activada", "Desactivada", "Baneada")
 );
 
------------------------------------------------------------------
-
------------------------------------------------------------------
 
 /*
 Tabla posts
@@ -62,9 +50,6 @@ CREATE TABLE posts(
 
 );
 
------------------------------------------------------------------
-
------------------------------------------------------------------
 
 /*
 Tabla threads
@@ -87,14 +72,8 @@ CREATE TABLE hilos(
     texto text NOT NULL
 );
 
------------------------------------------------------------------
 
-------------------------------------------------------------------------
 
--- Creacion de relaciones de tablas
-------------------------------------------------------------------------
-
------------------------------------------------------------------
 
 /* 
 Relaciona la columna usuario de la tabla posts
@@ -105,10 +84,6 @@ ALTER TABLE posts
     ADD CONSTRAINT AUTOR_POST FOREIGN KEY (usuario) 
     REFERENCES usuarios(nombre)
     ON DELETE CASCADE ON UPDATE CASCADE;
-
------------------------------------------------------------------
-
------------------------------------------------------------------
 
 /* 
 Relaciona la columna usuario de la tabla hilos
@@ -125,22 +100,10 @@ ALTER TABLE hilos
     REFERENCES posts(id)
     ON DELETE CASCADE ON UPDATE CASCADE;  
 
------------------------------------------------------------------
-
-------------------------------------------------------------------------
 
 
-
-
-
--------
--- INSERT
--------
 USE foro;
 
-------------------------------------------------------------------------
--- USUARIOS
-------------------------------------------------------------------------
 INSERT INTO usuarios
 (password, nombre, foto, descripcion, fecha_creacion, rango, estado)
 VALUES
@@ -152,9 +115,8 @@ VALUES
 
 ('jorge', 'jorge', '../recursos/imagenes/default.gif',
  'Moderador del foro', '2024-01-04', 'Moderador', 'Activada');
-------------------------------------------------------------------------
--- POSTS
-------------------------------------------------------------------------
+
+
 INSERT INTO posts
 (titulo, usuario, fecha, texto, imagenes)
 VALUES
@@ -174,29 +136,22 @@ VALUES
  'Respetad a los demás usuarios y disfrutad del foro.',
  '../recursos/imagenes/default.gif');
 
-------------------------------------------------------------------------
--- HILOS (RESPUESTAS A POSTS)
-------------------------------------------------------------------------
 
--- Respuestas al post 1
 INSERT INTO hilos (post, usuario, anterior, fecha, texto)
 VALUES
 (1, 'victor', 0, '2024-02-05',
  'Gracias por crear el foro, tiene muy buena pinta');
 
--- Respuestas al post 2
 INSERT INTO hilos (post, usuario, anterior, fecha, texto)
 VALUES
 (2, 'admin', 0, '2024-02-06',
  'Gran elección, Super Mario Bros es historia viva');
 
--- Respuestas al post 3
 INSERT INTO hilos (post, usuario, anterior, fecha, texto)
 VALUES
 (3, 'jorge', 0, '2024-02-07',
  'Tema complicado, ambas consolas marcaron una época');
 
--- Respuestas encadenadas
 INSERT INTO hilos (post, usuario, anterior, fecha, texto)
 VALUES
 (3, 'admin', 3, '2024-02-08',
