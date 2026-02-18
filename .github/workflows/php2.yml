@@ -56,9 +56,8 @@ jobs:
 
     - name: TEST DE Base de Datos
       run: |
-           mysql -h 127.0.0.1 -uroot foro -e "select * from usuarios ; "
+           mysql -h 127.0.0.1 -uroot foro -e "select * from usuario ; "
            echo "RESULTADO= $?"
-
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
