@@ -32,3 +32,4 @@ Instrucciones de la version de release:
 Nota: Se debe sustituir "IPDESERVIDOR" con la ip de tu servidor
 
 Nota2: Se recomienda usar antes el comando "podman system prune --all --force && podman rmi --all" para limpiar el servidor de imagenes y contenedores
+a
