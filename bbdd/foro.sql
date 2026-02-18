@@ -17,7 +17,7 @@ Tabla usuarios
         - estado : ENUM ("Activada", "Desactivada", "Baneada")
 */
 
-CREATE TABLE usuarios(
+CREATE TABLE usuario(
     id INT AUTO_INCREMENT PRIMARY KEY,
     password VARCHAR(255) NOT NULL,
     nombre VARCHAR(100) NOT NULL UNIQUE,
