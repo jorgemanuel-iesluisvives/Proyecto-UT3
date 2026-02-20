@@ -1,0 +1,7 @@
+secretGenerator:
+- name: mysql-pass
+  literals:
+  - password=contrasena
+resources:
+  - mysql-deployment.yaml
+  - php-deployment.yaml
