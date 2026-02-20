@@ -45,13 +45,8 @@ spec:
         tier: mysql
     spec:
       containers:
-      - build:
-            context: ./bbdd
-            containerfile: Containerfile
+      - image: localhost/bbddmaria:v1
         name: mysql
-        networks:
-          redbridgeIAW:
-            ipv4_address: 10.5.0.5
         env:
         - name: MARIADB_ALLOW_EMPTY_ROOT_PASSWORD
           value: 1

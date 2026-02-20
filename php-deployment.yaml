@@ -45,20 +45,15 @@ spec:
         tier: frontend
     spec:
       containers:
-      - build:
-            context: .
-            containerfile: Containerfile
-        name: webserver
-        networks:
-          redbridgeIAW:
-            ipv4_address: 10.5.0.6                    
+      - image: localhost/webserver:v1
+        name: php
         ports:
         - containerPort: 80
-          name: webserver
+          name: php
         volumeMounts:
-        - name: php-persistent-storage
+        - name: wordpress-persistent-storage
           mountPath: /var/www/html
       volumes:
-      - name: php-persistent-storage
+      - name: wordpress-persistent-storage
         persistentVolumeClaim:
           claimName: wp-pv-claim
