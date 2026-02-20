@@ -45,23 +45,16 @@ spec:
         tier: mysql
     spec:
       containers:
-      - image: mysql:8.0
+      - build:
+            context: ./bbdd
+            containerfile: Containerfile
         name: mysql
+        networks:
+          redbridgeIAW:
+            ipv4_address: 10.5.0.5
         env:
-        - name: MYSQL_ROOT_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mysql-pass
-              key: password
-        - name: MYSQL_DATABASE
-          value: php
-        - name: MYSQL_USER
-          value: php
-        - name: MYSQL_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mysql-pass
-              key: password
+        - name: MARIADB_ALLOW_EMPTY_ROOT_PASSWORD
+          value: 1
         ports:
         - containerPort: 3306
           name: mysql
