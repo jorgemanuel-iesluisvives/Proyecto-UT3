@@ -1,0 +1,9 @@
+Events:
+  Type     Reason     Age                 From               Message
+  ----     ------     ----                ----               -------
+  Normal   Scheduled  104s                default-scheduler  Successfully assigned default/php-mysql-54cf5b9d47-25bzf to kind-control-plane
+  Normal   Pulling    17s (x4 over 104s)  kubelet            spec.containers{mysql}: Pulling image "localhost/bbddmariadb:12"
+  Warning  Failed     16s (x4 over 104s)  kubelet            spec.containers{mysql}: Failed to pull image "localhost/bbddmariadb:12": failed to pull and unpack image "localhost/bbddmariadb:12": failed to resolve reference "localhost/bbddmariadb:12": failed to do request: Head "https://localhost/v2/bbddmariadb/manifests/12": dial tcp 127.0.0.1:443: connect: connection refused
+  Warning  Failed     16s (x4 over 104s)  kubelet            spec.containers{mysql}: Error: ErrImagePull
+  Normal   BackOff    2s (x6 over 103s)   kubelet            spec.containers{mysql}: Back-off pulling image "localhost/bbddmariadb:12"
+  Warning  Failed     2s (x6 over 103s)   kubelet            spec.containers{mysql}: Error: ImagePullBackOff
